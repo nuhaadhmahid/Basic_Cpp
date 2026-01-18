@@ -19,25 +19,6 @@
                 "kind": "test",
                 "isDefault": true
             }
-        }, 
-        {
-            "label": "clean",
-            "type": "shell",
-            "command": "rm",
-            "args": ["-rf", "build/*"],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            }
-        }, 
-        {
-            "label": "build and run",
-            "type": "shell",
-            "group": {
-                "kind": "test",
-                "isDefault": false
-            },
-            "dependsOn": ["build", "run"]
         }
     ]
 }
